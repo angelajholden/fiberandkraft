@@ -1,0 +1,60 @@
+// Sass watch
+// sass --watch scss/styles.scss:css/styles.css --style=compressed
+
+// Color palette
+$white: #fff;
+$black: #222;
+$gray: #f8f9fa;
+
+// Typography
+$font-family: "Work Sans", sans-serif;
+
+// Typography Mixins
+@mixin font-normal {
+	font-family: $font-family;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@mixin font-italic {
+	font-family: $font-family;
+	font-weight: 400;
+	font-style: italic;
+}
+
+@mixin font-bold {
+	font-family: $font-family;
+	font-weight: 500;
+	font-style: normal;
+}
+
+// Flexbox Mixin
+@mixin flexbox($justify: flex-start, $align: stretch, $align-content: stretch) {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: $justify;
+	align-items: $align;
+	align-content: $align-content;
+}
+
+// Breakpoints
+$breakpoints: (
+	"small": 460px,
+	// Small devices (landscape phones)
+	"medium": 768px,
+	// Medium devices (tablets)
+	"large": 960px,
+	// Large devices (desktops)
+	"xlarge": 1200px // Extra large devices (large desktops),,,
+);
+
+// Breakpoint Mixin
+@mixin breakpoint($name) {
+	@if map-has-key($breakpoints, $name) {
+		@media (min-width: map-get($breakpoints, $name)) {
+			@content;
+		}
+	} @else {
+		@warn "No breakpoint defined for #{$name}.";
+	}
+}
