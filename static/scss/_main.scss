@@ -12,6 +12,7 @@ body {
 	margin: 0;
 	padding: 0;
 	@include font-normal;
+	font-size: 100%;
 	line-height: 1.75;
 	color: $black;
 }
@@ -29,4 +30,8 @@ img {
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
+}
+
+.main {
+	@include max-width;
 }
