@@ -26,8 +26,8 @@ $font-family: "Work Sans", sans-serif;
 	font-style: normal;
 }
 
-@mixin max-width($padding: 2rem) {
-	max-width: 90rem;
+@mixin max-width($padding: 1rem) {
+	max-width: 75rem;
 	margin: 0 auto;
 	padding: $padding;
 }
@@ -35,7 +35,7 @@ $font-family: "Work Sans", sans-serif;
 // Flexbox Mixin
 @mixin flexbox($justify: flex-start, $align: stretch, $align-content: center) {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	justify-content: $justify;
 	align-items: $align;
 	align-content: $align-content;
@@ -49,7 +49,7 @@ $breakpoints: (
 	// Medium devices (tablets)
 	"large": 960px,
 	// Large devices (desktops)
-	"xlarge": 1200px // Extra large devices (large desktops),,,,,,,,,,,,,
+	"xlarge": 1200px // Extra large devices (large desktops),,,,,,,,,,,,,,,,
 );
 
 // Breakpoint Mixin
