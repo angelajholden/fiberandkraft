@@ -19,6 +19,7 @@
 	.header_inner {
 		@include max-width($padding: 0.75rem 0.5rem 0);
 		@include flexbox($justify: space-between, $align: center);
+		gap: 1rem;
 	}
 
 	.logo {
@@ -54,9 +55,23 @@
 		}
 
 		svg {
-			width: 2rem;
-			height: 2rem;
-			fill: $black;
+			width: 1.65rem;
+			height: 1.65rem;
+			color: $black;
+			transition: color 0.3s ease;
+
+			&.active,
+			&:active,
+			&:hover {
+				color: $pink;
+			}
+		}
+
+		@include breakpoint(medium) {
+			svg {
+				width: 2rem;
+				height: 2rem;
+			}
 		}
 	}
 
@@ -64,11 +79,26 @@
 		a {
 			display: block;
 			color: $black;
+			transition: color 0.3s ease;
 
 			svg {
-				width: 2rem;
-				height: 2rem;
-				fill: $black;
+				width: 1.65rem;
+				height: 1.65rem;
+			}
+
+			&.active,
+			&:active,
+			&:hover {
+				color: $pink;
+			}
+		}
+
+		@include breakpoint(medium) {
+			a {
+				svg {
+					width: 2rem;
+					height: 2rem;
+				}
 			}
 		}
 	}

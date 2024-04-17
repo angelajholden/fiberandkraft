@@ -45,11 +45,11 @@ $font-family: "Work Sans", sans-serif;
 $breakpoints: (
 	"small": 460px,
 	// Small devices (landscape phones)
-	"medium": 768px,
+	"medium": 600px,
 	// Medium devices (tablets)
 	"large": 960px,
 	// Large devices (desktops)
-	"xlarge": 1200px // Extra large devices (large desktops),,,,,,,,,,,,,,,,
+	"xlarge": 1200px // Extra large devices (large desktops),,,,,,,,,,,,,,,,,
 );
 
 // Breakpoint Mixin
