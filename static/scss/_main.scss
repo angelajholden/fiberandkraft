@@ -18,6 +18,7 @@ body {
 }
 
 img {
+	display: block;
 	max-width: 100%;
 	height: auto;
 }
@@ -34,4 +35,18 @@ img {
 
 .main {
 	@include max-width;
+}
+
+.primary_heading {
+	font-size: 2.5rem;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.footer {
+	@include max-width;
+
+	p {
+		text-align: center;
+	}
 }

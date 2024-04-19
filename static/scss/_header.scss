@@ -49,32 +49,6 @@
 		}
 	}
 
-	.form {
-		input {
-			display: none;
-		}
-
-		svg {
-			width: 1.65rem;
-			height: 1.65rem;
-			color: $black;
-			transition: color 0.3s ease;
-
-			&.active,
-			&:active,
-			&:hover {
-				color: $pink;
-			}
-		}
-
-		@include breakpoint(medium) {
-			svg {
-				width: 2rem;
-				height: 2rem;
-			}
-		}
-	}
-
 	.cart {
 		a {
 			display: block;
@@ -84,6 +58,7 @@
 			svg {
 				width: 1.65rem;
 				height: 1.65rem;
+				margin-top: 8px;
 			}
 
 			&.active,

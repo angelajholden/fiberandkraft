@@ -2,6 +2,7 @@
 $white: #fff;
 $black: #222;
 $gray: #f8f9fa;
+$dk-gray: #ccc;
 $pink: #ffc0cb;
 
 // Typography
@@ -33,12 +34,11 @@ $font-family: "Work Sans", sans-serif;
 }
 
 // Flexbox Mixin
-@mixin flexbox($justify: flex-start, $align: stretch, $align-content: center) {
+@mixin flexbox($flow: row nowrap, $justify: flex-start, $align: stretch) {
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: $flow;
 	justify-content: $justify;
 	align-items: $align;
-	align-content: $align-content;
 }
 
 // Breakpoints
@@ -49,7 +49,7 @@ $breakpoints: (
 	// Medium devices (tablets)
 	"large": 960px,
 	// Large devices (desktops)
-	"xlarge": 1200px // Extra large devices (large desktops),,,,,,,,,,,,,,,,,
+	"xlarge": 1200px // Extra large devices (large desktops),,,,,,,,,,,,,,,,,,,,,,
 );
 
 // Breakpoint Mixin

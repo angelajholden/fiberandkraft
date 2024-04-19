@@ -1,0 +1,62 @@
+.form {
+	position: relative;
+	@include flexbox($justify: space-between, $align: center);
+
+	input[type="search"] {
+		width: 8rem;
+		padding: 10px 5px;
+		appearance: none;
+		border: none;
+		border-bottom: 1px solid $dk-gray;
+		box-shadow: none;
+		transition: all 0.3s ease;
+
+		&:focus {
+			width: 12rem;
+		}
+
+		// @include breakpoint(medium) {
+		// 	width: 15rem;
+		// 	padding: 10px 45px 10px 10px;
+		// 	border: 2px solid $dk-gray;
+		// }
+	}
+
+	input[type="submit"] {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 2rem;
+		height: 100%;
+		padding: 0;
+		border: none;
+		background: transparent;
+		cursor: pointer;
+		transition: all 0.3s ease;
+
+		// @include breakpoint(medium) {
+		// 	width: 2.5rem;
+		// }
+	}
+
+	svg {
+		width: 1.65rem;
+		height: 1.65rem;
+		pointer-events: none;
+		color: $black;
+		transition: color 0.3s ease;
+
+		&.active,
+		&:active,
+		&:hover {
+			color: $pink;
+		}
+	}
+
+	@include breakpoint(medium) {
+		svg {
+			width: 2rem;
+			height: 2rem;
+		}
+	}
+}
