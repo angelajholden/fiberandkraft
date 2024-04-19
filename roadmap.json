@@ -1,0 +1,14 @@
+[
+	{
+		"item": "DK Style 100% Merino",
+		"type": "yarn",
+		"cost": 23.0,
+		"color": "yellow",
+		"fiber": "merino",
+		"weight": "DK",
+		"yardage": 247,
+		"grams": 100,
+		"quantity": 5,
+		"image": "images/yellow.jpg"
+	}
+]
