@@ -1,0 +1,137 @@
+.cart {
+	max-width: 50rem;
+	margin: 0 auto;
+
+	.cart_item {
+		@include flexbox($flow: row nowrap, $justify: space-between, $align: flex-start);
+		gap: 1rem;
+		padding: 1rem 0;
+		border-bottom: 1px solid $dk-gray;
+
+		@include breakpoint(large) {
+			align-items: center;
+		}
+	}
+
+	.img_container {
+		flex: 0 0 125px;
+	}
+
+	.cart_img {
+		position: relative;
+		width: 100%;
+		height: 0;
+		margin: 0;
+		padding-bottom: 100%;
+
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			z-index: -1;
+		}
+	}
+
+	.cart_details {
+		@include flexbox($flow: column nowrap, $justify: space-between, $align: flex-start);
+		gap: 0;
+		flex: 1 1 auto;
+
+		@include breakpoint(large) {
+			flex-flow: row nowrap;
+			align-items: baseline;
+			gap: 1rem;
+		}
+
+		.cart_title {
+			flex: 1 1 auto;
+
+			@include breakpoint(large) {
+				flex: 0 0 calc(33.333% - 1rem);
+			}
+		}
+
+		.cart_quantity {
+			@include flexbox($flow: row nowrap, $justify: space-between, $align: center);
+			flex: 0 0 auto;
+			text-align: center;
+			max-width: 110px;
+			margin: 0.5rem 0;
+			padding: 4px;
+			border: 2px solid $dk-gray;
+
+			@include breakpoint(large) {
+				flex: 0 0 calc(33.333% - 1rem);
+				margin: 1rem 0;
+				padding: 8px;
+			}
+
+			.product_count-btn {
+				display: block;
+				width: 40px;
+				height: 25px;
+				border: 0;
+				appearance: none;
+				background-color: transparent;
+				line-height: 0;
+				text-align: center;
+			}
+		}
+
+		.item_subtotal {
+			flex: 0 0 calc(33.333% - 1rem);
+			text-align: right;
+
+			.remove_item {
+				display: inline-block;
+				padding: 0;
+				appearance: none;
+				border: 0;
+				border-bottom: 1px solid $black;
+				background: none;
+				cursor: pointer;
+				font-size: 0.85rem;
+			}
+		}
+	}
+
+	.cart_total {
+		margin-top: 1.5rem;
+		font-size: 1.25rem;
+		font-weight: 400;
+		text-align: center;
+
+		@include breakpoint(large) {
+			text-align: right;
+		}
+
+		strong {
+			font-weight: 500;
+		}
+
+		.checkout_button a {
+			display: inline-block;
+			width: 100%;
+			padding: 10px;
+			color: $black;
+			text-transform: uppercase;
+			text-decoration: none;
+			text-align: center;
+			letter-spacing: 2px;
+			border: 2px solid transparent;
+			background-color: $pink;
+			transition: all 0.3s ease;
+
+			@include breakpoint(medium) {
+				width: 200px;
+			}
+
+			&:hover,
+			&:active {
+				border: 2px solid $pink;
+				background-color: $white;
+			}
+		}
+	}
+}

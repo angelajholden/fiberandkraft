@@ -8,7 +8,9 @@
 		"weight": "DK",
 		"yardage": 247,
 		"grams": 100,
+		"ounces": 3.5,
 		"quantity": 5,
-		"image": "images/yellow.jpg"
+		"image": "images/yellow.jpg",
+		"desc": "This is a beautiful yellow yarn that is 100% merino wool. It is a DK weight yarn and is perfect for any project. It is soft and squishy and will make a beautiful finished project."
 	}
 ]

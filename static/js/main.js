@@ -32,6 +32,20 @@ function toggleMenu() {
 	});
 }
 
+function toggleSearch() {
+	const form = document.querySelector(".form");
+	const close = document.querySelector(".close-search");
+	const search = document.querySelector(".form svg");
+
+	search.addEventListener("click", function () {
+		form.classList.toggle("active");
+	});
+
+	close.addEventListener("click", function () {
+		form.classList.toggle("active");
+	});
+}
+
 function openCloseMenu() {
 	const icon = document.querySelector(".menu");
 	const menu = document.querySelector(".nav");
@@ -52,6 +66,6 @@ function openCloseMenu() {
 document.addEventListener("DOMContentLoaded", function () {
 	updateCopyright();
 	youAreHereNavigation();
-	// toggleMenu();
+	// toggleSearch();
 	openCloseMenu();
 });
