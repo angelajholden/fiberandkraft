@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+// Color palette
+$white: #fff;
+$black: #222;
+$gray: #eaeaea;
+$dk-gray: #ccc;
+$pink: #ffc0cb;
+
+// Color Variables
+:root {
+  --pink: #ffc0cb;
+  --black: #222;
+  --white: #fff;
+  --dk-gray: #ccc;
+  --gray: #eaeaea;
+}
+
+@import "mixins";
+@import "normalize";
+@import "main";
+@import "form";
+@import "header";
+@import "footer";
+@import "products";
+@import "product-page";
+@import "cart";

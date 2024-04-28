@@ -1,0 +1,7 @@
+.footer {
+  @include max-width;
+
+  p {
+    text-align: center;
+  }
+}
