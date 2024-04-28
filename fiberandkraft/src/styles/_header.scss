@@ -31,8 +31,9 @@
     }
 
     svg {
-      width: 225px;
-      max-width: 100%;
+      display: block;
+      width: 100%;
+      max-width: 225px;
       height: auto;
       fill: var(--black);
     }
