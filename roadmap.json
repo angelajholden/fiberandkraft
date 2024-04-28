@@ -1,16 +1,17 @@
 [
 	{
-		"item": "DK Style 100% Merino",
+		"_id": "5f8f3b3b1f1b3b0017f3b3b1",
+		"name": "DK Style 100% Merino",
 		"type": "yarn",
 		"cost": 23.0,
 		"color": "yellow",
 		"fiber": "merino",
 		"weight": "DK",
-		"yardage": 247,
+		"yards": 247,
 		"grams": 100,
-		"ounces": 3.5,
 		"quantity": 5,
-		"image": "images/yellow.jpg",
-		"desc": "This is a beautiful yellow yarn that is 100% merino wool. It is a DK weight yarn and is perfect for any project. It is soft and squishy and will make a beautiful finished project."
+		"image": "https://fiberandkraft.com/images/dk-style-merino-yellow.jpg",
+		"alt": "DK Style 100% Merino in yellow",
+		"description": "This is a beautiful yellow yarn that is 100% merino wool. It is a DK weight yarn and is perfect for any project. It is soft and squishy and will make a beautiful finished project."
 	}
 ]
