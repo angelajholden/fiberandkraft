@@ -4,7 +4,7 @@
 <div class="header_inner">
   <h1 class="logo">
     <span class="access-hidden">Fiber &amp; Kraft</span>
-    <a href="/static/index.html">
+    <a [routerLink]="['']">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 739.22 218.88">
         <path
           d="M36.24,171.13c-3.75-44.88,4.25-97.12,16-124.12,7.12-16.25,16.75-21,22.5-17.38,6.25,4,13.38,32-20.38,63.25-1.38,7.88-2.38,17.75-3.25,29h.12c8.12,3.5,34,.12,45-17.5,2.5-4.25,4.75-1.88,3.62,1.62-8.75,14.5-30.25,24.5-45.75,21.25,26.88,35.5,27.5,86.75,5.5,84.25-15.88-1.88-21.62-19.25-23.38-40.38ZM50.11,129.63c-2.88,27.12.5,51,6,68.75,9.12,28.25,30.25-18.38-6-68.75ZM53.61,88.5c30.62-28.5,22.25-61.12,16.75-52.62-7,10.88-15,38.75-16.75,52.62Z"
@@ -80,7 +80,7 @@
       </svg>
     </form>
     <div class="cart">
-      <a href="/static/cart.html">
+      <a [routerLink]="['/cart']">
         <span class="access-hidden">Cart</span>
         <span class="count">3</span>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -123,23 +123,68 @@
         </svg>
       </a>
     </div>
-    <button aria-label="Toggle Menu" class="menu">
+    <button
+      aria-label="Toggle Menu"
+      class="menu"
+      [class.clicked]="menuActive"
+      (click)="toggleMenu()"
+    >
       <span></span>
       <span></span>
       <span></span>
     </button>
   </div>
 </div>
-<nav class="nav">
+<nav class="nav" [class.active]="menuActive">
   <ul class="nav_inner">
     <li class="nav_inner_list">
-      <a class="nav_inner_list_item" href="/static/index.html">Products</a>
+      <a
+        class="nav_inner_list_item"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        [routerLink]="['/']"
+        >Shop</a
+      >
     </li>
     <li class="nav_inner_list">
-      <a class="nav_inner_list_item" href="/static/product.html">Product</a>
+      <a
+        class="nav_inner_list_item"
+        routerLinkActive="active"
+        [routerLink]="['/product']"
+        >Product</a
+      >
     </li>
     <li class="nav_inner_list">
-      <a class="nav_inner_list_item" href="/static/cart.html">Checkout</a>
+      <a
+        class="nav_inner_list_item"
+        routerLinkActive="active"
+        [routerLink]="['/cart']"
+        >Checkout</a
+      >
+    </li>
+    <li class="nav_inner_list">
+      <a
+        class="nav_inner_list_item"
+        routerLinkActive="active"
+        [routerLink]="['/login']"
+        >Login</a
+      >
+    </li>
+    <li class="nav_inner_list">
+      <a
+        class="nav_inner_list_item"
+        routerLinkActive="active"
+        [routerLink]="['/register']"
+        >Register</a
+      >
+    </li>
+    <li class="nav_inner_list">
+      <a
+        class="nav_inner_list_item"
+        routerLinkActive="active"
+        [routerLink]="['/contact']"
+        >Contact</a
+      >
     </li>
   </ul>
 </nav>
