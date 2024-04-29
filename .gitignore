@@ -1,5 +1,3 @@
-*.DS_Store
-*/.DS_Store
 static/
 ga4.txt
 roadmap.json
@@ -27,6 +25,7 @@ yarn-error.log
 *.sublime-workspace
 
 # Visual Studio Code
+.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -42,6 +41,7 @@ yarn-error.log
 /libpeerconnection.log
 testem.log
 /typings
+.editorconfig
 
 # System files
 .DS_Store
