@@ -23,22 +23,26 @@
           {{ product?.material }}
         </li>
         <li>
+          <strong>Finish:</strong>
+          {{ product?.finish }}
+        </li>
+        <li *ngIf="product?.weight">
           <strong>Weight:</strong>
           {{ product?.weight }}
         </li>
-        <li>
+        <li *ngIf="(product?.yards ?? 0) > 0">
           <strong>Yards:</strong>
           {{ product?.yards }}
         </li>
-        <li>
+        <li *ngIf="(product?.yards ?? 0) > 0">
           <strong>Meters:</strong>
           {{ (product?.yards ?? 0) / 1.094 | number : "1.0-1" }}
         </li>
-        <li>
+        <li *ngIf="(product?.grams ?? 0) > 0">
           <strong>Grams:</strong>
           {{ product?.grams }}
         </li>
-        <li>
+        <li *ngIf="(product?.grams ?? 0) > 0">
           <strong>Ounces:</strong>
           {{ (product?.grams ?? 0) / 28.3495 | number : "1.0-1" }}
         </li>

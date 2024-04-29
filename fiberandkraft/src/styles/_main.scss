@@ -34,7 +34,11 @@ img {
 }
 
 .main {
-  @include max-width;
+  @include max-width();
+
+  @include breakpoint(large) {
+    margin: 2rem auto 0;
+  }
 }
 
 .primary_heading {

@@ -19,9 +19,9 @@ $font-family: "Work Sans", sans-serif;
   font-style: normal;
 }
 
-@mixin max-width($padding: 1rem) {
+@mixin max-width($padding: 1rem, $margin: 0 auto) {
   max-width: 75rem;
-  margin: 0 auto;
+  margin: $margin;
   padding: $padding;
 }
 
@@ -42,7 +42,7 @@ $breakpoints: (
   "large": 960px,
   // Large devices (desktops)
   "xlarge": 1200px
-    // Extra large devices (large desktops),,,,,,,,,,,,,,,,,,,,,,,,,,
+    // Extra large devices (large desktops),,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 // Breakpoint Mixin

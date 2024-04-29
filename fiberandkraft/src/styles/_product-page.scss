@@ -43,7 +43,7 @@
 }
 
 .product_title {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 300;
   line-height: 1.25;
   margin: 0 0 1rem;
@@ -51,12 +51,12 @@
   border-bottom: 1px solid var(--dk-gray);
 
   @include breakpoint(large) {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
 .detail_heading {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 300;
   line-height: 1.25;
   margin: 3rem 0 0;
