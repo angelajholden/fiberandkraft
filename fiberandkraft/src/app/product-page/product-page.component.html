@@ -1,18 +1,15 @@
 <section class="product_page">
   <div class="product_container">
     <figure class="product_image">
-      <img src="https://picsum.photos/1024/768" alt="product image" />
+      <img src="{{ product?.image }}" alt="{{ product?.alt }}" />
     </figure>
     <article class="product_sidebar">
-      <h1 class="product_title">DK Style 100% Merino</h1>
+      <h1 class="product_title">{{ product?.name }}</h1>
       <p class="prodcut_desc">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quae
-        quis eum, fugiat sed, amet sunt error adipisci quaerat tenetur similique
-        iusto neque ut consequatur, placeat praesentium voluptatem accusantium
-        dolorum.
+        {{ product?.description }}
       </p>
-      <div class="product_price">$27.00 USD</div>
-      <div class="product_quantity">5 Available</div>
+      <div class="product_price">${{ product?.cost }}.00 USD</div>
+      <div class="product_quantity">{{ product?.quantity }} Available</div>
       <div class="product_count">
         <button class="product_count-btn">&ndash;</button>
         1
@@ -23,27 +20,27 @@
       <ul class="detail_list">
         <li>
           <strong>Fiber:</strong>
-          100% Merino Wool
+          {{ product?.material }}
         </li>
         <li>
           <strong>Weight:</strong>
-          DK
+          {{ product?.weight }}
         </li>
         <li>
           <strong>Yards:</strong>
-          246
+          {{ product?.yards }}
         </li>
         <li>
           <strong>Meters:</strong>
-          225
+          {{ (product?.yards ?? 0) / 1.094 | number : "1.0-1" }}
         </li>
         <li>
           <strong>Grams:</strong>
-          100
+          {{ product?.grams }}
         </li>
         <li>
           <strong>Ounces:</strong>
-          3.5
+          {{ (product?.grams ?? 0) / 28.3495 | number : "1.0-1" }}
         </li>
       </ul>
     </article>

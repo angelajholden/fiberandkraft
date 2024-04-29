@@ -1,5 +1,5 @@
 .products {
-  @include flexbox($flow: row wrap, $justify: space-between, $align: center);
+  @include flexbox($flow: row wrap, $justify: flax-start, $align: stretch);
   gap: 1.5rem;
 
   .item {

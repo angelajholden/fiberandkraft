@@ -48,7 +48,7 @@
   line-height: 1.25;
   margin: 0 0 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid var(--light-blue);
+  border-bottom: 1px solid var(--dk-gray);
 
   @include breakpoint(large) {
     font-size: 3rem;
@@ -61,7 +61,7 @@
   line-height: 1.25;
   margin: 3rem 0 0;
   padding: 1.5rem 0 1rem;
-  border-top: 1px solid var(--light-blue);
+  border-top: 1px solid var(--dk-gray);
 }
 
 .detail_list {
@@ -89,7 +89,7 @@
   width: 110px;
   margin: 1rem 0;
   padding: 8px;
-  border: 2px solid var(--light-red);
+  border: 2px solid var(--pink);
 
   .product_count-btn {
     display: block;
@@ -105,8 +105,8 @@
 
 .product_add-cart {
   appearance: none;
-  border: 2px solid var(--light-red);
-  background-color: var(--light-red);
+  border: 2px solid var(--pink);
+  background-color: var(--pink);
   text-transform: uppercase;
   font-size: 0.9rem;
   letter-spacing: 1px;
