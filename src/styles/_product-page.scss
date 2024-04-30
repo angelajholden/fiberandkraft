@@ -110,7 +110,7 @@
   margin: 1rem 0;
   padding: 8px;
   color: var(--black);
-  border: 2px solid var(--lt-yellow);
+  border: 2px solid var(--dk-yellow);
 
   .product_count-btn {
     display: block;
@@ -140,6 +140,7 @@
 
   &:hover,
   &:active {
+    border-color: var(--dk-yellow);
     background-color: transparent;
   }
 }

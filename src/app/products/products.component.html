@@ -1,4 +1,17 @@
-<h1 class="primary_heading">Products</h1>
+<div class="page_opener">
+  <h1 class="primary_heading">Welcome to Fiber &amp; Kraft!</h1>
+  <p>
+    For fiber enthusiasts who want to buy custom blend wool and hand dyed yarn,
+    Fiber &amp; Kraft curates and sells fiber for spinning, knitting and
+    crocheting.
+  </p>
+  <p>
+    Our products are made from high quality wool that's ethically sourced from
+    midwest shepherds and milled locally in Minnesota. Unlike mills producing
+    large volumes of wool from around the world, each skein of yarn or bump of
+    fiber can be matched to a flock, ram, ewe or lamb.
+  </p>
+</div>
 <section class="products">
   <article class="item" *ngFor="let product of products">
     <a class="view_item" [routerLink]="['/product', product.endPoint]">

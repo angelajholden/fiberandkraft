@@ -17,9 +17,13 @@
   }
 
   .header_inner {
-    @include max-width($padding: 0.75rem 0.5rem 0);
+    @include max-width($padding: 0.75rem 0.5rem 0.5rem);
     @include flexbox($justify: space-between, $align: center);
     gap: 1rem;
+
+    @include breakpoint(large) {
+      padding-bottom: 0;
+    }
   }
 
   .logo {
