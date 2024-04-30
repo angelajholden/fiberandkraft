@@ -33,11 +33,11 @@
       &::before {
         content: "";
         position: absolute;
-        top: 50%;
+        top: 15px;
         left: 0;
-        transform: translateY(-50%);
-        border-left: 4px solid var(--pink);
-        height: 35px;
+        border-left: 3px solid var(--dk-yellow);
+        width: 5px;
+        height: 45px;
       }
 
       span {

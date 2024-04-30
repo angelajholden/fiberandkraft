@@ -1,11 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-// Color palette
-$white: #fff;
-$black: #222;
-$gray: #eaeaea;
-$dk-gray: #ccc;
-$pink: #ffc0cb;
-
 // Color Variables
 :root {
   --pink: #ffc0cb;
@@ -13,6 +6,14 @@ $pink: #ffc0cb;
   --white: #fff;
   --dk-gray: #ccc;
   --gray: #eaeaea;
+  --blue: #022859;
+  --lt-blue: #79baf2;
+  --lt-yellow: #f2c879;
+  --dk-yellow: #d99d55;
+  --brown: #6f5147;
+  --maroon: #732929;
+  --green: #79928c;
+  --purple: #4b2848;
 }
 
 @import "mixins";

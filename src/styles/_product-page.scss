@@ -59,19 +59,38 @@
 .detail_heading {
   font-size: 2.5rem;
   font-weight: 300;
-  line-height: 1.25;
+  line-height: 1;
   margin: 3rem 0 0;
   padding: 1.5rem 0 1rem;
   border-top: 1px solid var(--dk-gray);
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+    border-left: 3px solid var(--dk-yellow);
+    height: 40px;
+  }
 }
 
 .detail_list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  text-transform: capitalize;
+
+  li {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
 
   strong {
+    display: inline-block;
+    margin-right: 5px;
     font-weight: 600;
+    text-transform: uppercase;
+    color: var(--brown);
   }
 }
 
@@ -90,12 +109,14 @@
   width: 110px;
   margin: 1rem 0;
   padding: 8px;
-  border: 2px solid var(--pink);
+  color: var(--black);
+  border: 2px solid var(--lt-yellow);
 
   .product_count-btn {
     display: block;
     width: 25px;
     height: 25px;
+    color: var(--black);
     border: 0;
     appearance: none;
     background-color: transparent;
@@ -106,12 +127,13 @@
 
 .product_add-cart {
   appearance: none;
-  border: 2px solid var(--pink);
-  background-color: var(--pink);
+  cursor: pointer;
+  border: 2px solid var(--lt-yellow);
+  background-color: var(--lt-yellow);
   text-transform: uppercase;
   font-size: 0.9rem;
   letter-spacing: 1px;
-  color: var(--white);
+  color: var(--black);
   padding: 10px 15px;
   width: auto;
   transition: all 300ms ease;
@@ -119,6 +141,5 @@
   &:hover,
   &:active {
     background-color: transparent;
-    color: var(--black);
   }
 }

@@ -1,7 +1,11 @@
 <section class="product_page">
   <div class="product_container">
     <figure class="product_image">
-      <img src="assets/images/{{ product?.image }}" alt="{{ product?.alt }}" />
+      <img
+        *ngIf="product?.image"
+        [src]="'assets/images/' + product?.image"
+        alt="{{ product?.alt }}"
+      />
     </figure>
     <article class="product_sidebar">
       <h1 class="product_title">{{ product?.name }}</h1>
@@ -19,7 +23,7 @@
       <h2 class="detail_heading">All the details...</h2>
       <ul class="detail_list">
         <li>
-          <strong>Fiber:</strong>
+          <strong>Materials:</strong>
           {{ product?.material }}
         </li>
         <li>

@@ -18,7 +18,7 @@ Custom
 ===
 dk blue #022859
 yellow #F2C879
-green #79928C 
+green #79928C
 maroon #79322C
 purple #4B2848
 

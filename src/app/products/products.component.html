@@ -4,7 +4,7 @@
     <a class="view_item" [routerLink]="['/product', product.endPoint]">
       <span class="access-hidden">{{ product.name }}</span>
       <figure class="image">
-        <img src="assets/images/{{ product.image }}" alt="{{ product.alt }}" />
+        <img [src]="'assets/images/' + product.image" alt="{{ product.alt }}" />
       </figure>
       <p class="item_desc">
         <span class="item_name">{{ product.name }}</span>
