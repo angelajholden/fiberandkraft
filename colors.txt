@@ -1,0 +1,65 @@
+Colorful
+===
+blue #022859
+lt yellow #F2C879
+dk yellow #D99D55
+brown #735449 
+maroon #732929
+
+Muted
+===
+dk blue #022859
+lt blue #79BAF2
+yellow #F0C569
+brown #8C6C61
+maroon #732929
+
+Custom
+===
+dk blue #022859
+yellow #F2C879
+green #79928C 
+maroon #79322C
+purple #4B2848
+
+/* Color Theme Swatches in Hex */
+$fiber-and-kraft-1-hex: #022859;
+$fiber-and-kraft-2-hex: #F2C879;
+$fiber-and-kraft-3-hex: #D99D55;
+$fiber-and-kraft-4-hex: #735449;
+$fiber-and-kraft-5-hex: #732929;
+
+/* Color Theme Swatches in RGBA */
+$fiber-and-kraft-1-rgba: rgba(2,40,89, 1);
+$fiber-and-kraft-2-rgba: rgba(242,200,121, 1);
+$fiber-and-kraft-3-rgba: rgba(217,157,85, 1);
+$fiber-and-kraft-4-rgba: rgba(115,84,73, 1);
+$fiber-and-kraft-5-rgba: rgba(115,41,41, 1);
+
+/* Color Theme Swatches in HSLA */
+$fiber-and-kraft-1-hsla: hsla(213, 95, 17, 1);
+$fiber-and-kraft-2-hsla: hsla(39, 82, 71, 1);
+$fiber-and-kraft-3-hsla: hsla(32, 63, 59, 1);
+$fiber-and-kraft-4-hsla: hsla(15, 22, 36, 1);
+$fiber-and-kraft-5-hsla: hsla(0, 47, 30, 1);
+
+/* Color Theme Swatches in Hex */
+$Copy-of-Luxury-Silver-1-hex: #474143;
+$Copy-of-Luxury-Silver-2-hex: #A69E9D;
+$Copy-of-Luxury-Silver-3-hex: #E7E2DA;
+$Copy-of-Luxury-Silver-4-hex: #FFFFFF;
+$Copy-of-Luxury-Silver-5-hex: #E7E8E7;
+
+/* Color Theme Swatches in RGBA */
+$Copy-of-Luxury-Silver-1-rgba: rgba(71,65,67, 1);
+$Copy-of-Luxury-Silver-2-rgba: rgba(166,158,157, 1);
+$Copy-of-Luxury-Silver-3-rgba: rgba(231,226,218, 1);
+$Copy-of-Luxury-Silver-4-rgba: rgba(255,255,255, 1);
+$Copy-of-Luxury-Silver-5-rgba: rgba(231,232,231, 1);
+
+/* Color Theme Swatches in HSLA */
+$Copy-of-Luxury-Silver-1-hsla: hsla(339, 4, 26, 1);
+$Copy-of-Luxury-Silver-2-hsla: hsla(6, 4, 63, 1);
+$Copy-of-Luxury-Silver-3-hsla: hsla(36, 21, 88, 1);
+$Copy-of-Luxury-Silver-4-hsla: hsla(0, 0, 100, 1);
+$Copy-of-Luxury-Silver-5-hsla: hsla(120, 2, 90, 1);

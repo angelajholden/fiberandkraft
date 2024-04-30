@@ -1,5 +1,5 @@
 // Typography Mixins
-$font-family: "Work Sans", sans-serif;
+$font-family: "Lato", sans-serif;
 
 @mixin font-normal {
   font-family: $font-family;
@@ -36,13 +36,9 @@ $font-family: "Work Sans", sans-serif;
 // Breakpoints
 $breakpoints: (
   "small": 460px,
-  // Small devices (landscape phones)
   "medium": 600px,
-  // Medium devices (tablets)
   "large": 960px,
-  // Large devices (desktops)
-  "xlarge": 1200px
-    // Extra large devices (large desktops),,,,,,,,,,,,,,,,,,,,,,,,,,,
+  "xlarge": 1200px,
 );
 
 // Breakpoint Mixin
