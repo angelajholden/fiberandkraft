@@ -49,6 +49,7 @@
     }
 
     .item_name {
+      text-transform: capitalize;
       border-bottom: 1px solid transparent;
       transition: border-bottom 0.5s ease;
     }
