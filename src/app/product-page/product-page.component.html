@@ -15,11 +15,17 @@
       <div class="product_price">${{ product?.cost }}.00 USD</div>
       <div class="product_quantity">{{ product?.quantity }} Available</div>
       <div class="product_count">
-        <button class="product_count-btn">&ndash;</button>
-        1
-        <button class="product_count-btn">&plus;</button>
+        <button class="product_count-btn" (click)="decrementQuantity()">
+          &ndash;
+        </button>
+        {{ quantity }}
+        <button class="product_count-btn" (click)="incrementQuantity()">
+          &plus;
+        </button>
       </div>
-      <button class="product_add-cart">Add To Cart</button>
+      <button class="product_add-cart" (click)="addToCart(product, quantity)">
+        Add To Cart
+      </button>
       <h2 class="detail_heading">All the details...</h2>
       <ul class="detail_list">
         <li>

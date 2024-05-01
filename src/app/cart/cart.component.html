@@ -1,33 +1,44 @@
 <section class="cart">
   <h1 class="primary_heading">Shopping Cart</h1>
+  <p *ngIf="!items[0]">Add something to you cart!</p>
   <!--loop starts here-->
-  <article class="cart_item">
+  <article class="cart_item" *ngFor="let product of items; let i = index">
     <div class="img_container">
       <figure class="cart_img">
-        <img src="https://picsum.photos/275/500" alt="product thumb" />
+        <img
+          *ngIf="product?.image"
+          [src]="'assets/images/' + product?.image"
+          alt="{{ product?.alt }}"
+        />
       </figure>
     </div>
 
     <div class="cart_details">
-      <div class="cart_title">DK Style 100% Merino Yellow Tonal</div>
+      <div class="cart_title">{{ product?.name }}</div>
 
       <div class="cart_quantity">
-        <button class="product_count-btn">&ndash;</button>
-        1
-        <button class="product_count-btn">&plus;</button>
+        <button class="product_count-btn" (click)="decrement(i)">
+          &ndash;
+        </button>
+        {{ quantity[i] }}
+        <button class="product_count-btn" (click)="increment(i)">&plus;</button>
       </div>
 
       <div class="item_subtotal">
-        $27.00 USD
+        ${{
+          product && product.cost && quantity[i] !== undefined
+            ? product.cost * quantity[i]
+            : 0
+        }}.00 USD
         <br />
-        <button class="remove_item">Remove</button>
+        <button class="remove_item" (click)="removeItem(i)">Remove</button>
       </div>
     </div>
   </article>
   <!--loop ends here-->
   <div class="cart_total">
     <strong>Cart Total:</strong>
-    $132.45 USD
+    ${{ total }} USD
     <p class="checkout_button"><a href="">Checkout</a></p>
   </div>
 </section>

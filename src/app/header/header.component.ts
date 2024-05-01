@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-header',
@@ -6,7 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  menuActive: boolean = false;
+  public menuActive: boolean = false;
+  public products: any[] = [];
+
+  constructor(private cartService: CartService) {}
+
+  itemCount() {
+    return this.cartService.getItems().length;
+  }
 
   toggleMenu(): void {
     this.menuActive = !this.menuActive;

@@ -7,9 +7,11 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ContactComponent } from './contact/contact.component';
+import { AccountComponent } from './account/account.component';
 
 const routes: Routes = [
   { path: '', component: ProductsComponent },
+  { path: 'account', component: AccountComponent },
   { path: 'cart', component: CartComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'login', component: LoginComponent },
