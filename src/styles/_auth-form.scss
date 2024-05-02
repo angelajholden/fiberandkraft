@@ -8,12 +8,7 @@
 }
 
 .content {
-  flex: 0 0 auto;
-
-  @include breakpoint(large) {
-    flex: 0 0 calc(33.333% - 2rem);
-    max-width: 33.333%;
-  }
+  flex: 1 1 auto;
 }
 
 .auth_form {
@@ -21,8 +16,8 @@
   flex: 0 0 auto;
 
   @include breakpoint(large) {
-    flex: 0 0 66.666%;
-    max-width: 66.666%;
+    flex: 0 0 66%;
+    max-width: 66%;
   }
 
   input[type="text"],
@@ -32,8 +27,16 @@
     width: 100%;
     padding: 20px;
     margin: 0 0 1rem;
-    border: 1px solid var(--brown);
+    border: 2px solid var(--brown);
     border-radius: 0;
+
+    &.ng-invalid.ng-touched {
+      border-color: red;
+
+      &::after {
+        content: "Invalid";
+      }
+    }
   }
 }
 
