@@ -1,8 +1,31 @@
-<section class="register_page">
-  <form #form="ngForm" (ngSubmit)="onRegister(form)">
-    <input type="text" name="name" ngModel required placeholder="Name" />
-    <input type="email" name="email" ngModel required placeholder="Email" />
+<section class="auth_page">
+  <aside class="content">
+    <h1 class="primary_heading">Register</h1>
+    <p>Please register to create an account.</p>
+    <p>Already have an account? <a routerLink="/login">Login</a></p>
+  </aside>
+  <form class="auth_form" #form="ngForm" (ngSubmit)="onRegister(form)">
+    <label for="name" class="access-hidden">Name</label>
     <input
+      id="name"
+      type="text"
+      name="name"
+      ngModel
+      required
+      placeholder="Name"
+    />
+    <label for="email" class="access-hidden">Email</label>
+    <input
+      id="email"
+      type="email"
+      name="email"
+      ngModel
+      required
+      placeholder="Email"
+    />
+    <label for="password" class="access-hidden">Password</label>
+    <input
+      id="password"
       type="password"
       name="password"
       ngModel

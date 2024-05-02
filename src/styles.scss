@@ -14,14 +14,16 @@
   --maroon: #732929;
   --green: #79928c;
   --purple: #4b2848;
+  --links: #0057a3;
 }
 
 @import "mixins";
 @import "normalize";
 @import "main";
-@import "form";
+@import "search-form";
 @import "header";
 @import "footer";
+@import "auth-form";
 @import "products";
 @import "product-page";
 @import "cart";

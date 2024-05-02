@@ -1,0 +1,44 @@
+.auth_page {
+  @include flexbox($flow: column nowrap);
+  gap: 2rem;
+
+  @include breakpoint(large) {
+    flex-flow: row nowrap;
+  }
+}
+
+.content {
+  flex: 0 0 auto;
+
+  @include breakpoint(large) {
+    flex: 0 0 calc(33.333% - 2rem);
+    max-width: 33.333%;
+  }
+}
+
+.auth_form {
+  @include flexbox($flow: column wrap);
+  flex: 0 0 auto;
+
+  @include breakpoint(large) {
+    flex: 0 0 66.666%;
+    max-width: 66.666%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin: 0 0 1rem;
+    border: 1px solid var(--brown);
+    border-radius: 0;
+  }
+}
+
+button[type="submit"] {
+  @include button;
+  min-width: 150px;
+  margin: 0 auto;
+}
