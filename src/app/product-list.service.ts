@@ -8,8 +8,8 @@ import { IProduct } from './iproduct.model';
 })
 export class ProductListService {
   private apiUrl =
-    // 'https://fiberandkraftdb-6eb9fbd231fe.herokuapp.com/api/products';
-    'http://localhost:3000/api/products';
+    'https://fiberandkraftdb-6eb9fbd231fe.herokuapp.com/api/products';
+  // 'http://localhost:3000/api/products';
 
   constructor(private http: HttpClient) {}
 
