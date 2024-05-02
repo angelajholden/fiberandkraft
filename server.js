@@ -1,11 +1,15 @@
+//Install express server
 const express = require("express");
 const path = require("path");
+
 const app = express();
 
-app.use(express.static(__dirname + "/dist/fiberkraft"));
+// Serve only the static files from the dist directory
+app.use(express.static("./dist/fiber-and-kraft"));
 
-app.get("/*", function (req, res) {
-  res.sendFile(path.join(__dirname + "/dist/fiberkraft/index.html"));
-});
+app.get("/*", (req, res) =>
+  res.sendFile("index.html", { root: "dist/fiber-and-kraft/" })
+);
 
+// Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);
