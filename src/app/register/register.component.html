@@ -1,1 +1,14 @@
-<p>register works!</p>
+<section class="register_page">
+  <form #form="ngForm" (ngSubmit)="onRegister(form)">
+    <input type="text" name="name" ngModel required placeholder="Name" />
+    <input type="email" name="email" ngModel required placeholder="Email" />
+    <input
+      type="password"
+      name="password"
+      ngModel
+      required
+      placeholder="Password"
+    />
+    <button type="submit">Register</button>
+  </form>
+</section>

@@ -124,8 +124,8 @@
       </a>
     </div>
     <div class="nav_icon">
-      <a [routerLink]="['/account']">
-        <span class="access-hidden">Account</span>
+      <a [routerLink]="['/user']">
+        <span class="access-hidden">User</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="ionicon"
@@ -176,31 +176,20 @@
       <a
         class="nav_inner_list_item"
         routerLinkActive="active"
-        [routerLink]="['/product']"
-        >Product</a
-      >
-    </li>
-    <li class="nav_inner_list">
-      <a
-        class="nav_inner_list_item"
-        routerLinkActive="active"
-        [routerLink]="['/checkout']"
-        >Checkout</a
-      >
-    </li>
-    <li class="nav_inner_list">
-      <a
-        class="nav_inner_list_item"
-        routerLinkActive="active"
-        [routerLink]="['/login']"
+        *ngIf="!(isLoggedIn$ | async)"
+        routerLink="/login"
         >Login</a
       >
     </li>
+    <li class="nav_inner_list" *ngIf="isLoggedIn$ | async" (click)="onLogout()">
+      Logout
+    </li>
     <li class="nav_inner_list">
       <a
         class="nav_inner_list_item"
         routerLinkActive="active"
-        [routerLink]="['/register']"
+        *ngIf="!(isLoggedIn$ | async)"
+        routerLink="/register"
         >Register</a
       >
     </li>

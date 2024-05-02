@@ -1,1 +1,13 @@
-<p>login works!</p>
+<section class="page">
+  <form #form="ngForm" (ngSubmit)="onLogin(form)">
+    <input type="email" name="email" ngModel required placeholder="Email" />
+    <input
+      type="password"
+      name="password"
+      ngModel
+      required
+      placeholder="Password"
+    />
+    <button type="submit">Login</button>
+  </form>
+</section>
