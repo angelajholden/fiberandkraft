@@ -79,7 +79,7 @@
         />
       </svg>
     </form>
-    <div class="nav_icon">
+    <div class="nav_icon icon_cart">
       <a [routerLink]="['/cart']">
         <span class="access-hidden">Cart</span>
         <span class="count" *ngIf="itemCount()">{{ itemCount() }}</span>
@@ -123,7 +123,7 @@
         </svg>
       </a>
     </div>
-    <div class="nav_icon">
+    <div class="nav_icon icon_user">
       <a [routerLink]="['/user']">
         <span class="access-hidden">User</span>
         <svg
@@ -148,8 +148,11 @@
           />
         </svg>
       </a>
+      <button class="logout" *ngIf="isLoggedIn$ | async" (click)="onLogout()">
+        Logout
+      </button>
     </div>
-    <button
+    <!--<button
       aria-label="Toggle Menu"
       class="menu"
       [class.clicked]="menuActive"
@@ -158,10 +161,10 @@
       <span></span>
       <span></span>
       <span></span>
-    </button>
+    </button>-->
   </div>
 </div>
-<nav class="nav" [class.active]="menuActive">
+<!--<nav class="nav" [class.active]="menuActive">
   <ul class="nav_inner">
     <li class="nav_inner_list">
       <a
@@ -202,4 +205,4 @@
       >
     </li>
   </ul>
-</nav>
+</nav>-->
