@@ -8,7 +8,9 @@ import { User } from './user/user.model';
   providedIn: 'root',
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:3000/api/users';
+  // private apiUrl = 'http://localhost:3000/api/users';
+  private apiUrl =
+    'https://fiberandkraftdb-6eb9fbd231fe.herokuapp.com/api/products';
   private isAuthenticated = new BehaviorSubject<boolean>(this.hasToken());
   private hasToken(): boolean {
     return !!localStorage.getItem('token');
