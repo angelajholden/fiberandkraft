@@ -1,27 +1,73 @@
-# Fiberandkraft
+# Fiber & Kraft
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+Welcome to Fiber & Kraft, an e-commerce platform designed for fiber enthusiasts looking to purchase custom blend wool and hand-dyed yarn. Our platform curates high-quality fiber products for spinning, knitting, and crocheting, sourced ethically from Midwest shepherds and milled locally in Minnesota. Each skein of yarn or bump of fiber can be traced back to its source, ensuring a connection between our products and their origins.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Ethically Sourced Materials**: Products made from wool sourced directly from local shepherds.
+- **Local Production**: All materials are milled locally, ensuring quality and sustainability.
+- **Accessibility and GDPR Compliance**: Our website meets WCAG 2.2 standards and is GDPR compliant, making it accessible to a wider audience.
+- **Optimized for Mobile and Accessibility**: A minimal and aesthetically pleasing interface that's fully functional on mobile devices and accessible via screen readers.
 
-## Code scaffolding
+## Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Before you can run Fiber & Kraft locally, you'll need the following installed on your system:
 
-## Build
+- [Node.js](https://nodejs.org/)
+- [Angular CLI](https://cli.angular.io/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Running unit tests
+To set up Fiber & Kraft locally, follow these steps:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository:
+   ```bash
+   git clone git@github.com:angelajholden/fiberandkraft.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd fiberandkraft
+   ```
+3. Install the required dependencies:
+   ```bash
+   npm install
+   ```
 
-## Running end-to-end tests
+## Running the Application
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+To run Fiber & Kraft on your local machine:
 
-## Further help
+1. Start the development server:
+   ```bash
+   ng serve
+   ```
+2. Open your browser and navigate to:
+   ```plaintext
+   http://localhost:4200
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Deployment
+
+Fiber & Kraft is deployed on Heroku. For deploying your version, follow these steps:
+
+1. Make sure you have the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) installed.
+2. Log in to your Heroku account:
+   ```bash
+   heroku login
+   ```
+3. Create a new Heroku app:
+   ```bash
+   heroku create
+   ```
+4. Push the code to Heroku:
+   ```bash
+   git push heroku main
+   ```
+
+## Contributing
+
+We welcome contributions from the community. If you'd like to contribute to Fiber & Kraft, please fork the repository and submit a pull request.
+
+## License
+
+Fiber & Kraft is licensed under the MIT License. See the LICENSE file in the project repository for more details.
