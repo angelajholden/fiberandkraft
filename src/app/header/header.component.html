@@ -1,5 +1,5 @@
 <div class="header_message">
-  <p>Free shipping on orders over $35</p>
+  <p>This is not a real eCommerce website.</p>
 </div>
 <div class="header_inner">
   <h1 class="logo">
@@ -83,7 +83,7 @@
       <a [routerLink]="['/cart']">
         <span class="access-hidden">Cart</span>
         @if (itemCount()) {
-          <span class="count">{{ itemCount() }}</span>
+        <span class="count">{{ itemCount() }}</span>
         }
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
           <circle
@@ -128,11 +128,7 @@
     <div class="nav_icon icon_user">
       <a [routerLink]="['/user']">
         <span class="access-hidden">User</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="ionicon"
-          viewBox="0 0 512 512"
-          >
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
           <path
             d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z"
             fill="none"
@@ -151,9 +147,9 @@
         </svg>
       </a>
       @if (isLoggedIn$ | async) {
-        <button class="logout" (click)="onLogout()">
-          Logout
-        </button>
+      <button class="logout" (click)="onLogout()">
+        Logout
+      </button>
       }
     </div>
     <!--<button
@@ -166,7 +162,7 @@
     <span></span>
     <span></span>
   </button>-->
-</div>
+  </div>
 </div>
 <!--<nav class="nav" [class.active]="menuActive">
 <ul class="nav_inner">
