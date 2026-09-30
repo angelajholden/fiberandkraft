@@ -2,6 +2,7 @@ static/
 ga4.txt
 roadmap.json
 colors.txt
+.env
 
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 

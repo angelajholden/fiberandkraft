@@ -68,6 +68,13 @@ Fiber & Kraft is deployed on Heroku. For deploying your version, follow these st
 
 We welcome contributions from the community. If you'd like to contribute to Fiber & Kraft, please fork the repository and submit a pull request.
 
+## Design & Assets
+
+The visual design and product assets for Fiber & Kraft are my original work unless otherwise noted.
+
+- Product imagery, copy, and brand assets are provided for demonstration and educational purposes.
+- Third-party frameworks, tools, fonts, and services retain their original licenses.
+
 ## License
 
 Fiber & Kraft is licensed under the MIT License. See the LICENSE file in the project repository for more details.
