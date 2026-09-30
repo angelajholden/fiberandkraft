@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -19,23 +19,19 @@ import { AccountComponent } from './account/account.component';
 import { AuthService } from './auth.service';
 import { UserComponent } from './user/user.component';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    CartComponent,
-    ProductPageComponent,
-    ProductsComponent,
-    CheckoutComponent,
-    LoginComponent,
-    RegisterComponent,
-    ContactComponent,
-    AccountComponent,
-    UserComponent,
-  ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
-  providers: [ProductListService, CartService, AuthService],
-  bootstrap: [AppComponent],
-})
+@NgModule({ declarations: [
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        CartComponent,
+        ProductPageComponent,
+        ProductsComponent,
+        CheckoutComponent,
+        LoginComponent,
+        RegisterComponent,
+        ContactComponent,
+        AccountComponent,
+        UserComponent,
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule, AppRoutingModule, FormsModule], providers: [ProductListService, CartService, AuthService, provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule {}
