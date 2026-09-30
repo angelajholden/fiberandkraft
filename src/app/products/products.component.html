@@ -13,16 +13,18 @@
   </p>
 </div>
 <section class="products">
-  <article class="item" *ngFor="let product of products">
-    <a class="view_item" [routerLink]="['/product', product.endPoint]">
-      <span class="access-hidden">{{ product.name }}</span>
-      <figure class="image">
-        <img [src]="'assets/images/' + product.image" alt="{{ product.alt }}" />
-      </figure>
-      <p class="item_desc">
-        <span class="item_name">{{ product.name }}</span>
-        <span class="item_cost">${{ product.cost }}.00 USD</span>
-      </p>
-    </a>
-  </article>
+  @for (product of products; track product) {
+    <article class="item">
+      <a class="view_item" [routerLink]="['/product', product.endPoint]">
+        <span class="access-hidden">{{ product.name }}</span>
+        <figure class="image">
+          <img [src]="'assets/images/' + product.image" alt="{{ product.alt }}" />
+        </figure>
+        <p class="item_desc">
+          <span class="item_name">{{ product.name }}</span>
+          <span class="item_cost">${{ product.cost }}.00 USD</span>
+        </p>
+      </a>
+    </article>
+  }
 </section>

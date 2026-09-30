@@ -2,11 +2,12 @@
   <p class="back_shop"><a [routerLink]="''">Back to the shop</a></p>
   <div class="product_container">
     <figure class="product_image">
-      <img
-        *ngIf="product?.image"
-        [src]="'assets/images/' + product?.image"
-        alt="{{ product?.alt }}"
-      />
+      @if (product?.image) {
+        <img
+          [src]="'assets/images/' + product?.image"
+          alt="{{ product?.alt }}"
+          />
+      }
     </figure>
     <article class="product_sidebar">
       <h1 class="product_title">{{ product?.name }}</h1>
@@ -37,26 +38,36 @@
           <strong>Finish:</strong>
           {{ product?.finish }}
         </li>
-        <li *ngIf="product?.weight">
-          <strong>Weight:</strong>
-          {{ product?.weight }}
-        </li>
-        <li *ngIf="(product?.yards ?? 0) > 0">
-          <strong>Yards:</strong>
-          {{ product?.yards }}
-        </li>
-        <li *ngIf="(product?.yards ?? 0) > 0">
-          <strong>Meters:</strong>
-          {{ (product?.yards ?? 0) / 1.094 | number : "1.0-1" }}
-        </li>
-        <li *ngIf="(product?.grams ?? 0) > 0">
-          <strong>Grams:</strong>
-          {{ product?.grams }}
-        </li>
-        <li *ngIf="(product?.grams ?? 0) > 0">
-          <strong>Ounces:</strong>
-          {{ (product?.grams ?? 0) / 28.3495 | number : "1.0-1" }}
-        </li>
+        @if (product?.weight) {
+          <li>
+            <strong>Weight:</strong>
+            {{ product?.weight }}
+          </li>
+        }
+        @if ((product?.yards ?? 0) > 0) {
+          <li>
+            <strong>Yards:</strong>
+            {{ product?.yards }}
+          </li>
+        }
+        @if ((product?.yards ?? 0) > 0) {
+          <li>
+            <strong>Meters:</strong>
+            {{ (product?.yards ?? 0) / 1.094 | number : "1.0-1" }}
+          </li>
+        }
+        @if ((product?.grams ?? 0) > 0) {
+          <li>
+            <strong>Grams:</strong>
+            {{ product?.grams }}
+          </li>
+        }
+        @if ((product?.grams ?? 0) > 0) {
+          <li>
+            <strong>Ounces:</strong>
+            {{ (product?.grams ?? 0) / 28.3495 | number : "1.0-1" }}
+          </li>
+        }
       </ul>
     </article>
   </div>
