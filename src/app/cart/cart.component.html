@@ -10,7 +10,7 @@
         <figure class="cart_img">
           @if (product?.image) {
             <img
-              [src]="'assets/images/' + product?.image"
+              [src]="'assets/images/' + $safeNavigationMigration(product?.image)"
               alt="{{ product?.alt }}"
               />
           }

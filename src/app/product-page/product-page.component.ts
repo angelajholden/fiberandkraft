@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IProduct } from '../iproduct.model';
 import { ProductListService } from '../product-list.service';
@@ -8,6 +8,7 @@ import { CartService } from '../cart.service';
     selector: 'app-product-page',
     templateUrl: './product-page.component.html',
     styleUrls: ['./product-page.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class ProductPageComponent implements OnInit {

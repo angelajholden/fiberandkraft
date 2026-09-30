@@ -1,4 +1,4 @@
-import { Component, NgModule } from '@angular/core';
+import { Component, NgModule, ChangeDetectionStrategy } from '@angular/core';
 import { CartService } from '../cart.service';
 import { AuthService } from '../auth.service';
 import { Router } from '@angular/router';
@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
     selector: 'app-header',
     templateUrl: './header.component.html',
     styleUrls: ['./header.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class HeaderComponent {

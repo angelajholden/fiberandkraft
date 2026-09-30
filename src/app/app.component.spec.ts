@@ -1,15 +1,17 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-header', template: '',
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 class HeaderStubComponent {}
 @Component({
     selector: 'app-footer', template: '',
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 class FooterStubComponent {}
