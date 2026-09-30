@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { ProductListService } from '../product-list.service';
 
 @Component({
-  selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.scss'],
+    selector: 'app-products',
+    templateUrl: './products.component.html',
+    styleUrls: ['./products.component.scss'],
+    standalone: false
 })
 export class ProductsComponent {
   products: any[] = [];

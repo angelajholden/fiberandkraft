@@ -3,9 +3,15 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { Component } from '@angular/core';
 
-@Component({ selector: 'app-header', template: '' })
+@Component({
+    selector: 'app-header', template: '',
+    standalone: false
+})
 class HeaderStubComponent {}
-@Component({ selector: 'app-footer', template: '' })
+@Component({
+    selector: 'app-footer', template: '',
+    standalone: false
+})
 class FooterStubComponent {}
 
 describe('AppComponent', () => {

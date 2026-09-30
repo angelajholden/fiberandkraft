@@ -5,9 +5,10 @@ import { ProductListService } from '../product-list.service';
 import { CartService } from '../cart.service';
 
 @Component({
-  selector: 'app-product-page',
-  templateUrl: './product-page.component.html',
-  styleUrls: ['./product-page.component.scss'],
+    selector: 'app-product-page',
+    templateUrl: './product-page.component.html',
+    styleUrls: ['./product-page.component.scss'],
+    standalone: false
 })
 export class ProductPageComponent implements OnInit {
   public product: IProduct | undefined = undefined;
