@@ -1,4 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+@use "normalize";
+
 // Color Variables
 :root {
   --pink: #ffc0cb;
@@ -17,13 +18,13 @@
   --links: #0057a3;
 }
 
-@import "mixins";
-@import "normalize";
-@import "main";
-@import "search-form";
-@import "header";
-@import "footer";
-@import "auth-form";
-@import "products";
-@import "product-page";
-@import "cart";
+// @import "mixins";
+// @import "normalize";
+// @import "main";
+// @import "search-form";
+// @import "header";
+// @import "footer";
+// @import "auth-form";
+// @import "products";
+// @import "product-page";
+// @import "cart";

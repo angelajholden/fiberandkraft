@@ -1,0 +1,17 @@
+@use "mixins" as *;
+
+.footer {
+  @include max-width();
+
+  p {
+    text-align: center;
+
+    .heart-logo {
+      display: inline-block;
+      vertical-align: middle;
+      width: auto;
+      height: 25px;
+      margin: 0 5px;
+    }
+  }
+}

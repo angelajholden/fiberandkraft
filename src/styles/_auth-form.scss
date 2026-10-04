@@ -41,7 +41,7 @@
 }
 
 button[type="submit"] {
-  @include button;
+  @include button();
   min-width: 150px;
   margin: 0 auto;
 }
