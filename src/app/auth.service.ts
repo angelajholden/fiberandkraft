@@ -8,7 +8,7 @@ import { User } from './user/user.model';
   providedIn: 'root',
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:3000/api/users';
+  private apiUrl = '/api/users';
   private isAuthenticated = new BehaviorSubject<boolean>(this.hasToken());
   private hasToken(): boolean {
     return !!localStorage.getItem('token');
@@ -40,7 +40,7 @@ export class AuthService {
             localStorage.setItem('token', res.token);
             this.isAuthenticated.next(true);
           }
-        })
+        }),
       );
   }
 

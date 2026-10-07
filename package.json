@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --proxy-config proxy.conf.json",
     "server": "nodemon backend/server.js",
     "backend": "node backend/server.js",
     "dev": "concurrently --kill-others-on-fail --names api,web \"npm run server\" \"npm start\"",
